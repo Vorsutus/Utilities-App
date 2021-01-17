@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XamarinEssentialsApp.MapsApp">
+    
+    <ContentPage.Content>
+        <StackLayout Padding="10">
+            <Label Text="Options: " FontSize="Large"/>
+
+            <Label Text="Name" FontSize="Large" />
+            <Entry x:Name="EntryName"
+                   FontSize="Large"
+                   Text="BSU"/>
+
+            <Label Text="Latitude" Margin="0,24,0,0" />
+            <Entry Keyboard="Numeric"
+                   Text="43.6028"
+                   x:Name="EntryLatitude"/>
+
+            <Label Text="Longitude" Margin="0,24,0,0"/>
+            <Entry Keyboard="Numeric"
+                   Text="-116.2018"
+                   x:Name="EntryLongitude"/>
+            <Button Text="Open Coordinates"
+                    Clicked="OpenMap_Clicked"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

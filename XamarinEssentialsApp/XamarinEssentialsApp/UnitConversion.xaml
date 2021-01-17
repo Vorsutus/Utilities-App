@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XamarinEssentialsApp.UnitConversion">
+    <ContentPage.Content>
+        <StackLayout Padding="20">
+
+            <Label Text="Unit Conversion"
+                   FontSize="Large"
+                    VerticalOptions="Start" 
+                    HorizontalOptions="CenterAndExpand" />
+
+            <Entry x:Name="MilesToKilometers"
+                   Placeholder="Enter Miles"
+                   HorizontalOptions="Center"
+                   FontSize="Medium"/>
+            
+            <Button Text="Convert to Kilometers"
+                    Clicked="ConvertToKilometers"/>
+
+            <Label x:Name="KilometersLabel"
+                   HorizontalOptions="Center"
+                   FontSize="Medium"/>
+
+            <Entry x:Name="FahrenheitToCelsius"
+                   Placeholder="Enter Degrees Fahrenheit"
+                   HorizontalOptions="Center"
+                   FontSize="Medium"/>
+            
+            <Button Text="Convert To Celsius"
+                    Clicked="ConvertToCelsius"/>
+            
+            <Label x:Name="CelsiusLabel"
+                   HorizontalOptions="Center"
+                   FontSize="Medium"/>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
